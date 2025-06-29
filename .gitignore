@@ -1,0 +1,49 @@
+## Build results
+bin/
+obj/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## NuGet Packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## Microsoft Visual Studio cache files
+.vs/
+.vscode/
+
+## DotCover
+.idea/
+*.dotCover
+
+## Resharper
+_ReSharper*/
+*.DotSettings.user
+
+## Rider
+.idea/
+
+## Backup & transient files
+*.bak
+*.swp
+*~.nib
+*.tmp
+
+## Logs
+*.log
+
+## Web config transforms
+web.*.config
+appsettings.*.json
+
+## Azure Deployment
+.publish/

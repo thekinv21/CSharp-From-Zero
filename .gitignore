@@ -47,3 +47,7 @@ appsettings.*.json
 
 ## Azure Deployment
 .publish/
+
+
+## Enviroment
+.env

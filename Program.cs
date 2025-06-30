@@ -1,4 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using TodoApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+// Postgres Sql connection
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -17,7 +25,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapGet("/starter", () => { return "Application is running..."; })
+app.MapGet("/starter", () => "Application is running...")
     .WithName("Starter")
     .WithOpenApi();
 
